@@ -1,7 +1,8 @@
 body{
   background-color: black;
-}
-html,body{
   text-align: center;
-  
+}
+h1{
+  background-color: black;
+  text-align: center;
 }

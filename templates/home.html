@@ -1,21 +1,23 @@
 <!DOCTYPE = html>
 <html>
+<head>
 		<title>
 			{%block title%}
 				Welcome to Buggy Blogger!
 			{%endblock title%}
 		</title>
-	<head>
+
+		<link rel="stylesheet" type = "text/css" href="static/main.css"/>
+
+</head>
 		{%block greeting%}
 			{%set msgs = get_flashed_messages()%}
 			{%for each in msgs %}
 			<h1>{{each}}</h1>
 			{%endfor%}
 		{%endblock greeting%}
-		
-	    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 
-	</head>
+
 	<body>
 		{%block login %}
 		<h3>Welcome to Buggy Bloggers!</h3>
